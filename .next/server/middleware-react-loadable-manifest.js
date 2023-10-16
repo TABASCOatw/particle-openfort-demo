@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST={"../node_modules/@particle-network/auth/es/index.js -> draggabilly":{"id":"../node_modules/@particle-network/auth/es/index.js -> draggabilly","files":["static/chunks/node_modules_draggabilly_draggabilly_js.js"]},"index.tsx -> ./App":{"id":"index.tsx -> ./App","files":["static/chunks/pages_App_tsx.js"]}}
