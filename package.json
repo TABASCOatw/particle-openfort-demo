@@ -11,7 +11,7 @@
     },
     "dependencies": {
         "@openfort/openfort-js": "^0.3.0",
-        "@openfort/openfort-node": "^0.6.8",
+        "@openfort/openfort-node": "^0.6.36",
         "@particle-network/auth": "^1.2.1",
         "@particle-network/connect": "^1.2.0",
         "@particle-network/connect-react-ui": "^1.2.0",

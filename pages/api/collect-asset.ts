@@ -31,16 +31,14 @@ export default async function handler(req, res) {
       const createTransactionIntentRequest: CreateTransactionIntentRequest = {
         player: playerId,
         chainId: Number(process.env.NEXTAUTH_OPENFORT_CHAINID!),
-        optimistic: true,
+        optimistic: false,
         interactions: [interaction],
         policy: process.env.NEXTAUTH_OPENFORT_POLICY!,
         externalOwnerAddress: evm_wallet.publicAddress,
       };
 
       const transactionIntent = await openfort.transactionIntents.create(createTransactionIntentRequest);
-
-      if (transactionIntent) {
-        console.log("Item collected successfully.", transactionIntent);
+      if (transactionIntent) {  
         res.status(200).json({ name: "Item collection success.", data: transactionIntent });
       } else {
         res.status(400).json({ name: "Failed" });
